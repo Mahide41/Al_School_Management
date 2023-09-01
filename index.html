@@ -12,7 +12,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="w-full h-screen px-[221.500px]" style="background-image: url('images/pattern_background.jpg')">
+<body class="w-full h-screen px-[221.500px] bg-fixed bg-image"
+    style="background-image: url('images/pattern_background.jpg')">
     <section class="bg-white mx-[15px] px-[15px] pt-[8px]">
         <!-- header -->
         <header
@@ -22,52 +23,190 @@
                 সুবর্ণ জয়ন্তী ও বঙ্গবন্ধু কর্নার</a>
             <nav>
                 <ul class="text-[#f1f1f1] flex text-[13px]">
-                    <li class="hover:underline px-[10px] border-l-[1px] border-l-[#e1e1e1]"><a href="#">অনলাইন এক্সাম</a></li>
+                    <li class="hover:underline px-[10px] border-l-[1px] border-l-[#e1e1e1]"><a href="#">অনলাইন
+                            এক্সাম</a></li>
                     <li class="hover:underline px-[10px] border-l-[1px] border-l-[#e1e1e1]"><a href="#">ভর্তি</a></li>
                     <li class="hover:underline px-[10px] border-l-[1px] border-l-[#e1e1e1]"><a href="#">ফলাফল</a></li>
-                    <li class="hover:underline px-[10px] border-l-[1px] border-l-[#e1e1e1]"><a href="#">ছাত্র ছাত্রী লগইন</a></li>
-                    <li class="hover:underline px-[10px] border-l-[1px] border-l-[#e1e1e1]"><a href="#">ডাউনলোড ফাইল</a></li>
+                    <li class="hover:underline px-[10px] border-l-[1px] border-l-[#e1e1e1]"><a href="#">ছাত্র ছাত্রী
+                            লগইন</a></li>
+                    <li class="hover:underline px-[10px] border-l-[1px] border-l-[#e1e1e1]"><a href="#">ডাউনলোড ফাইল</a>
+                    </li>
                 </ul>
             </nav>
         </header>
         <!-- header end -->
 
         <!-- slider -->
-        <section>
+        <div>
             <div class="relative">
-            <img src="images/slider1.jpeg" alt="slider1">
-            <div class="absolute inset-0 mt-[50px] px-[30px] py-[20px]">
-                <a class="flex items-center text-[#FFFF00] text-left hover:underline text-[24px] font-bold"
-                    style="letter-spacing: 0.5px; text-shadow: -1px -1px 10px #000, 1px -1px 10px #000, -1px 1px 10px #000, 1px 1px 10px #000"
-                    href="#"><img class="h-[80px] rounded-[4px]" src="images/logo.png" alt="logo">
-                    আল হেলাল একাডেমী</a>
+                <div class="carousel w-full">
+                    <div id="item1" class="carousel-item w-full">
+                        <img src="images/slider1.jpeg" class="w-full" />
+                    </div>
+                    <div id="item2" class="carousel-item w-full">
+                        <img src="images/slider2.jpg" class="w-full" />
+                    </div>
+                    <div id="item3" class="carousel-item w-full">
+                        <img src="images/slider3.jpeg" class="w-full" />
+                    </div>
+                    <div id="item4" class="carousel-item w-full">
+                        <img src="images/slider4.jpeg" class="w-full" />
+                    </div>
                 </div>
+                <div class="flex justify-center w-full py-2 gap-2">
+                    <a href="#item1" class="btn btn-xs">1</a>
+                    <a href="#item2" class="btn btn-xs">2</a>
+                    <a href="#item3" class="btn btn-xs">3</a>
+                    <a href="#item4" class="btn btn-xs">4</a>
                 </div>
-            
-            <!-- drop down -->
-            <div>
-                <ul class="flex items-center border-b-[1spx] border-b-[#e5e5e5]">
-                    <li class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346]"><a href="index.html"><i class="fa-solid fa-house text-[15px]"></i></a></li>
-                    <li class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346]"><a href="#">আমাদের সম্পর্কে</a><i class="fa-solid fa-caret-down text-[10px]"></i></li>
-                    <li class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346]"><a href="#">প্রশাসনিক তথ্য</a><i class="fa-solid fa-caret-down text-[10px]"></i></li>
-                    <li class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346]"><a href="#">শিক্ষক এবং কর্মচারী</a><i class="fa-solid fa-caret-down text-[10px]"></i></li>
-                    <li class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346]"><a href="#">একাডেমিক তথ্য</a><i class="fa-solid fa-caret-down text-[10px]"></i></li>
-                    <li class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346]"><a href="#">সহপাঠ্যক্রম</a><i class="fa-solid fa-caret-down text-[10px]"></i></li>
-                    <li class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346]"><a href="#">ভর্তি সংক্রান্ত তথ্য</a><i class="fa-solid fa-caret-down text-[10px]"></i></li>
-                    <li class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346]"><a href="#">পরীক্ষা সংক্রান্ত তথ্য</a><i class="fa-solid fa-caret-down text-[10px]"></i></li>
-                    <li class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346]"><a href="#">ফলাফল</a><i class="fa-solid fa-caret-down text-[10px]"></i></li>
-                    <li class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346]"><a href="#">গ্যালারি</a><i class="fa-solid fa-caret-down text-[10px]"></i></li>
-                    <li class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346]"><a href="#">অভিযোগ বাক্স</a><i class="fa-solid fa-caret-down text-[10px]"></i></li>
-                </ul>
+                <div class="absolute inset-0 mt-[50px] px-[30px] py-[20px] h-[120px]">
+                    <a class="flex items-center text-[#FFFF00] text-left hover:underline text-[24px] font-bold"
+                        style="letter-spacing: 0.5px; text-shadow: -1px -1px 10px #000, 1px -1px 10px #000, -1px 1px 10px #000, 1px 1px 10px #000"
+                        href="#"><img class="h-[80px] rounded-[4px]" src="images/logo.png" alt="logo">
+                        আল হেলাল একাডেমী</a>
+                </div>
             </div>
-        </section>
+            <!-- slider end -->
+
+            <!-- drop down -->
+            <div class="flex items-center border-b-[1px] border-b-[#e5e5e5]" style="box-shadow: 0 1px 5px -2px #999">
+                <div class="px-[7px] py-[9.5px] border-r-[1px] border-r-[#e5e5e5] hover:bg-[#098346]">
+                    <a href="index.html"><i class="fa-solid fa-house text-[12px] text-[#000000]"></i></a>
+                </div>
+                <div class="dropdown dropdown-hover">
+                    <label tabindex="0"
+                        class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346] flex items-center gap-[1px]">
+                        আমাদের সম্পর্কে<i class="fa-solid fa-caret-down text-[10px]"></i></label>
+                    <ul tabindex="0"
+                        class="dropdown-content z-[1] menu p-2 bg-[#FFFFFF] border-[1px] border-[#e5e5e5] border-t-[5px] border-t-[#008000] w-52">
+                        <li><a>প্রতিষ্ঠান সম্পর্কে</a></li>
+                        <li><a>লক্ষ্য এবং উদ্দেশ্য</a></li>
+                        <li><a>ইতিহাস</a></li>
+                        <li><a>সিটিজেন চার্টার</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown dropdown-hover">
+                    <label tabindex="0"
+                        class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346] flex items-center gap-[1px]">
+                        প্রশাসনিক তথ্য<i class="fa-solid fa-caret-down text-[10px]"></i></label>
+                    <ul tabindex="0"
+                        class="dropdown-content z-[1] menu p-2 bg-[#FFFFFF] border-[1px] border-[#e5e5e5] border-t-[5px] border-t-[#008000] w-52">
+                        <li><a>সভাপতির বাণী</a></li>
+                        <li><a>প্রধান শিক্ষকের বাণী</a></li>
+                        <li><a>পরিচালনা পর্ষদ তথ্য</a></li>
+                        <li><a>সভাপতির তালিকা</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown dropdown-hover">
+                    <label tabindex="0"
+                        class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346] flex items-center gap-[1px]">
+                        শিক্ষক এবং কর্মচারী<i class="fa-solid fa-caret-down text-[10px]"></i></label>
+                    <ul tabindex="0"
+                        class="dropdown-content z-[1] menu p-2 bg-[#FFFFFF] border-[1px] border-[#e5e5e5] border-t-[5px] border-t-[#008000] w-52">
+                        <li><a>শিক্ষকবৃন্দের তথ্য</a></li>
+                        <li><a>কর্মচারীদের তথ্য</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown dropdown-hover">
+                    <label tabindex="0"
+                        class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346] flex items-center gap-[1px]">
+                        একাডেমিক তথ্য<i class="fa-solid fa-caret-down text-[10px]"></i></label>
+                    <ul tabindex="0"
+                        class="dropdown-content z-[1] menu p-2 bg-[#FFFFFF] border-[1px] border-[#e5e5e5] border-t-[5px] border-t-[#008000] w-52">
+                        <li><a>আচরণ বিধি</a></li>
+                        <li><a>একাডেমিক ক্যালেন্ডার</a></li>
+                        <li><a>ক্লাস রুটিন</a></li>
+                        <li><a>ছুটির তালিকা</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown dropdown-hover">
+                    <label tabindex="0"
+                        class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346] flex items-center gap-[1px]">
+                        সহপাঠ্যক্রম<i class="fa-solid fa-caret-down text-[10px]"></i></label>
+                    <ul tabindex="0"
+                        class="dropdown-content z-[1] menu p-2 bg-[#FFFFFF] border-[1px] border-[#e5e5e5] border-t-[5px] border-t-[#008000] w-52">
+                        <li><a>ক্রীড়া কার্যক্রম</a></li>
+                        <li><a>সাংস্কৃতিক কার্যক্রম</a></li>
+                        <li><a>স্কাউটস</a></li>
+                        <li><a>রেড ক্রিসেন্ট</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown dropdown-hover">
+                    <label tabindex="0"
+                        class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346] flex items-center gap-[1px]">
+                        ভর্তি সংক্রান্ত তথ্য<i class="fa-solid fa-caret-down text-[10px]"></i></label>
+                    <ul tabindex="0"
+                        class="dropdown-content z-[1] menu p-2 bg-[#FFFFFF] border-[1px] border-[#e5e5e5] border-t-[5px] border-t-[#008000] w-52">
+                        <li><a>প্রসপেক্টাস</a></li>
+                        <li><a>ভর্তির নিয়মাবলী</a></li>
+                        <li><a>ভর্তি পরীক্ষার সিলেবাস</a></li>
+                        <li><a>ভর্তির ফলাফল</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown dropdown-hover">
+                    <label tabindex="0"
+                        class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346] flex items-center gap-[1px]">
+                        পরীক্ষা সংক্রান্ত তথ্য<i class="fa-solid fa-caret-down text-[10px]"></i></label>
+                    <ul tabindex="0"
+                        class="dropdown-content z-[1] menu p-2 bg-[#FFFFFF] border-[1px] border-[#e5e5e5] border-t-[5px] border-t-[#008000] w-52">
+                        <li><a>পরীক্ষায় নিয়মাবলী</a></li>
+                        <li><a>পরীক্ষা ও ফলাফলের সময়সূচী</a></li>
+                        <li><a>সিলেবাস</a></li>
+                        <li><a>সাজেশন</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown dropdown-hover">
+                    <label tabindex="0"
+                        class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346] flex items-center gap-[1px]">
+                        ফলাফল<i class="fa-solid fa-caret-down text-[10px]"></i></label>
+                    <ul tabindex="0"
+                        class="dropdown-content z-[1] menu p-2 bg-[#FFFFFF] border-[1px] border-[#e5e5e5] border-t-[5px] border-t-[#008000] w-52">
+                        <li><a>অভ্যন্তরীণ ফলাফল</a></li>
+                        <li><a>পাবলিক পরীক্ষার ফলাফল</a></li>
+                        <li><a>বৃত্তি পরীক্ষার ফলাফল</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown dropdown-hover">
+                    <label tabindex="0"
+                        class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346] flex items-center gap-[1px]">
+                        গ্যালারি<i class="fa-solid fa-caret-down text-[10px]"></i></label>
+                    <ul tabindex="0"
+                        class="dropdown-content z-[1] menu p-2 bg-[#FFFFFF] border-[1px] border-[#e5e5e5] border-t-[5px] border-t-[#008000] w-52">
+                        <li><a>ফটো গ্যালারী</a></li>
+                        <li><a>ভিডিও গ্যালারী</a></li>
+                        <li><a>ম্যাগাজিন</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="px-[7px] py-[12px] text-[#000000] border-r-[1px] border-r-[#e5e5e5] text-[13px] hover:bg-[#098346]"
+                        href="#">অভিযোগ বাক্স</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider end -->
+
+    <!-- inside part -->
+    <section class="bg-white mx-[15px] pt-[48px] flex justify-between items-start">
+        <!-- left -->
+        <div>
+            <div class="bg-[#F5F5F5]">
+                <div>
+                    <img src="images/glove.png" alt="glove">
+                </div>
+
+            </div>
+
+        </div>
+        <!-- right -->
+
     </section>
 
     <!-- footer -->
     <section class="bg-white mx-[15px] pt-[48px]">
         <img class="w-full" src="images/minar.png" alt="minar">
     </section>
-    <footer class="bg-white mx-[15px] p-[30px] flex items-center justify-center gap-3 border-t-[1px] border-t-[#D3D3D3]">
+    <footer class="bg-white mx-[15px] p-[30px] flex items-center justify-center gap-3">
         <h2 class="text-[#808080] text-[13px]">Developed by</h2>
         <a class="text-[#609513] text-[12px] font-bold" href="#">SKILL BASED IT-SBIT</a>
     </footer>
